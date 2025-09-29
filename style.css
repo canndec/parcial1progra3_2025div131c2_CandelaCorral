@@ -1,0 +1,117 @@
+:root{
+    --verde-principal: rgb(35, 161, 35);
+    --verde-claro:  rgb(116, 170, 116);
+    --rojo-fuerte: rgb(235, 58, 58);
+}
+
+* {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*header*/
+header p {
+    color: white;
+    font-size: medium;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--verde-principal);
+    padding: 7px;
+}
+#inputTexto {
+height: 20px;
+   border-radius: 5px;
+}
+/*main*/
+h2 {
+    display: flex;
+    justify-content: center;
+}
+#botonesOrdenamiento {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+#botonesOrdenamiento button{
+    margin: 10px;
+    padding: 7px;
+    padding-inline: 20px;
+    background-color: var(--verde-claro);
+    border: white;
+    color: white;
+}
+/*contenedor de productos principal*/
+#informacionProductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    margin: 40px 80px;
+    padding-right: 20px;
+}
+/*cada prodcto*/
+.card-producto {
+    border: 1px solid rgb(216, 216, 216); /*check*/
+    width: 170px;
+    height: 230px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+    border-radius: 10px;
+}
+/*imagen de la cartaproducto*/
+.card-producto img {
+    width: 90px;
+}
+
+/*boton de la carta producto*/
+.card-producto button {
+    padding-block: 5px;
+    background-color: var(--verde-principal);
+    color: white;
+    border-radius: 5px;
+    border-color: white;
+    
+}
+
+/*carrito*/
+.bloque-item {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid;
+    padding: 20px;
+    margin: 10px 300px;
+}
+/*de carta producto*/
+.boton-eliminar {
+    background-color: var(--rojo-fuerte);
+    color: white;
+    border-color: white;
+    padding: 5px;
+}
+
+#montoTotal{
+    display: flex;
+    justify-content: right;
+    margin: 20px 50px;
+}
+#botonesManejo {
+    margin: 20px;
+    
+    padding: 5px;
+}
+#botonFinalizar {
+    color: white;
+    border-color: white;
+    background-color: var(--verde-claro);
+}
+#botonVaciar{
+    color: white;
+    border-color: white;
+    background-color: var(--rojo-fuerte);
+
+} 
